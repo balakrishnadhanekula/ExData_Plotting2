@@ -4,7 +4,6 @@ NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
 #subsetting the data for the fips=24510
-#subData<-subset(fileData, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
 NEISubSet<-subset(NEI,subset=(fips=="24510"))
 
 #Summing the emissions by year
